@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TECHO - CALCULADORA</title>
+        <link rel="shortcut icon" href="img/LOGO.jpg">
+        <link rel="stylesheet" href="CSS/ESTILOS.CSS">
+    </head>
+    <body>
+        <header>
+            <img class="logo" src="img/LOGO.jpg" alt="Calculadora para construcción">
+            <h1>CALCULADORA</h1>
+        </header>
+        <main>
+            <section class="calculadora calculadora-techo">
+                <h2>TECHO</h2>
+                <form id="form-techo">
+                    <div class="datos-techo">
+                        <h3>DATOS DEL TECHO</h3>
+                        <label for="Ancho">Ancho del Techo (M):</label>
+                        <input class="inputs" type="number" id="Ancho" min="0" step="0.01" required>
+                        <label for="Largo">Largo del Techo (M):</label>
+                        <input class="inputs" type="number" id="Largo" min="0" step="0.01" required>
+                        <label for="Espesor">Espesor del Techo (M):</label>
+                        <input class="inputs" type="number" id="Espesor" min="0" step="0.01" required>
+                    </div>
+                    <div class="resultados">
+                        <h3>RESULTADOS</h3>
+                        <label for="Superficie">Superficie del Techo (M2):</label>
+                        <input class="inputs" type="number" id="Superficie" min="0" step="0.01" readonly>
+                        <h3>MATERIALES NECESARIOS</h3>
+                        <label for="Cemento">Cemento (Kg):</label>
+                        <input class="inputs" type="number" id="Cemento" min="0" step="0.01" readonly>
+                        <label for="Arena">Arena (M3):</label>
+                        <input class="inputs" type="number" id="Arena" min="0" step="0.01" readonly>
+                        <label for="Piedra">Piedra (M3):</label>
+                        <input class="inputs" type="number" id="Piedra" min="0" step="0.01" readonly>
+                        <label for="Hierro6">Hierro 6 (M):</label>
+                        <input class="inputs" type="number" id="Hierro6" min="0" step="0.01" readonly>
+                        <label for="Hierro8">Hierro 8 (M):</label>
+                        <input class="inputs" type="number" id="Hierro8" min="0" step="0.01" readonly>
+                    </div>
+                    <input class="btn" type="submit" value="CALCULAR">
+                </form>
+                <a href="4. MENU.html">VOLVER AL MENÚ</a>
+            </section>
+        </main>
+        <footer>
+        <small>FET &copy; 2026</small>
+        </footer>
+        <script src="JavaScript/9. TECHO.JS"></script>
+    </body>
+</html>

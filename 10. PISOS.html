@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PISOS- CALCULADORA</title>
+        <link rel="shortcut icon" href="img/LOGO.jpg">
+        <link rel="stylesheet" href="CSS/ESTILOS.CSS">
+    </head>
+    <body>
+        <header>
+            <img class="logo" src="img/LOGO.jpg" alt="Calculadora para construcción">
+            <h1>CALCULADORA</h1>
+        </header>
+        <main>
+            <section class="calculadora calculadora-pisos">
+                <h2>PISOS</h2>
+                <form id="form-pisos">
+                    <div class="datos-pisos">
+                        <h3>DATOS DEL PISO</h3>
+                        <label for="Ancho">Ancho del piso (M):</label>
+                        <input class="inputs" type="number" id="Ancho" min="0" step="0.01" required>
+                        <label for="Largo">Largo del piso (M):</label>
+                        <input class="inputs" type="number" id="Largo" min="0" step="0.01" required>
+                    </div>
+                    <div class="resultados">
+                        <h3>RESULTADOS</h3>
+                        <label for="Superficie">Superficie del piso (M2):</label>
+                        <input class="inputs" type="number" id="Superficie" min="0" step="0.01" readonly>
+                        <label for="Adicional">10% Adicional (M2):</label>
+                        <input class="inputs" type="number" id="Adicional" min="0" step="0.01" readonly>
+                        <label for="Total">Total (M2):</label>
+                        <input class="inputs" type="number" id="Total" min="0" step="0.01" readonly>
+                    </div>
+                    <input class="btn" type="submit" value="CALCULAR">
+                </form>
+                <a href="4. MENU.html">VOLVER AL MENÚ</a>
+            </section>
+        </main>
+        <footer>
+        <small>FET &copy; 2026</small>
+        </footer>
+        <script src="JavaScript/10. PISOS.JS"></script>
+    </body>
+</html>

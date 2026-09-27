@@ -1,0 +1,424 @@
+/*CONFIGURACIÓN GENERAL*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: url("../img/FONDO2.jpeg") center center / cover no-repeat fixed;
+}
+header{
+    width: 100vw;
+    height: 11vh;
+    background: #414345;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.logo{
+    width: 4vw;
+    margin-left: 2vw;
+    position: absolute;
+    left: 0;
+}
+h1{
+    color: #000000;
+}
+main{
+    width: 100vw;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+section{
+    width: 30vw;
+    padding: 5vw;
+    background-color: rgba(255, 255, 255, 0.90);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+section div {
+    width: 100%;
+    text-align: center;
+}
+.simbolo{
+    width: 5vw;
+    height: 8vh;
+    border-radius: 0%;
+}
+
+
+/*ELEMENTOS GENERALES DE FORMULARIOS */
+.inputs{
+    width: 20vw;
+    height: 5vh;
+    margin: 2vw;
+    padding-left: 0.7vw;
+}
+.btn {
+    width: 10vw;
+    height: 5vh;
+    margin: 1vw;
+    background-color: #414345;
+    color: #fff;
+    border: none;
+    border-radius: 0.7vw;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: #EF476F;
+}
+
+
+/*INICIO DE SESIÓN*/
+.form-inicio{
+    width: 35vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*REGISTRO*/
+h2 {
+    margin-bottom: 1vw;
+    color: #000;
+}
+.form-registro {
+    width: 35vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form-registro label {
+    margin-top: 0.5vw;
+}
+section a {
+    color: #000;
+    text-decoration: none;
+    margin-top: 1vw;
+}
+section a:hover {
+    color: #EF476F;
+}
+.registro {
+    width: 30vw;
+    padding: 1.5vw;
+}
+.registro .inputs {
+    width: 20vw;
+    height: 5vh;
+    margin: 0.8vw;
+    padding-left: 0.7vw;
+}
+.registro .btn {
+    width: 10vw;
+    height: 5vh;
+    margin: 1vw;
+    background-color: #414345;
+    color: #fff;
+    border: none;
+    border-radius: 0.7vw;
+}
+.registro .btn:hover {
+    cursor: pointer;
+    background-color: #EF476F;
+}
+.iniciar-sesion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5vw;
+    margin-top: 1vw;
+}
+.iniciar-sesion a {
+    color: #000;
+    text-decoration: none;
+    margin-top: 0;
+}
+.iniciar-sesion a:hover {
+    color: #EF476F;
+}
+
+
+/*RECUPERAR CONTRASEÑA*/
+.Recuperar-contraseña {
+    width: 30vw;
+    padding: 1.5vw;
+    background-color: rgba(255, 255, 255, 0.90);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Recuperar-contraseña h2 {
+    margin-bottom: 1vw;
+    color: #000;
+    text-align: center;
+}
+.Recuperar-contraseña .form-recuperar {
+    width: 35vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Recuperar-contraseña .form-recuperar label {
+    margin-top: 0.5vw;
+}
+.Recuperar-contraseña .inputs {
+    width: 20vw;
+    height: 5vh;
+    margin: 0.8vw;
+    padding-left: 0.7vw;
+}
+.Recuperar-contraseña .btn {
+    width: 10vw;
+    height: 5vh;
+    margin: 1vw;
+    background-color: #414345;
+    color: #fff;
+    border: none;
+    border-radius: 0.7vw;
+}
+.Recuperar-contraseña .btn:hover {
+    cursor: pointer;
+    background-color: #EF476F;
+}
+
+
+/*MENÚ PRINCIPAL*/
+.menu {
+    width: 40vw;
+    padding: 3vw;
+    background-color: rgba(255, 255, 255, 0.90);
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1vw;
+}
+.menu h2 {
+    grid-column: 1 / 3;
+    margin-bottom: 1vw;
+    text-align: center;
+}
+.menu a {
+    width: auto;
+    padding: 1vw;
+    margin: 0;
+    text-align: center;
+    text-decoration: none;
+    background-color: #414345;
+    color: #fff;
+    border-radius: 0.7vw;
+}
+.menu a:hover {
+    color: #EF476F;
+}
+
+
+/* CALCULADORAS ESTILOS COMUNES*/
+.calculadora {
+    padding: 0.1vw;
+    background-color: rgba(255, 255, 255, 0.90);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.calculadora h2 {
+    margin-bottom: 1.5vw;
+    text-align: center;
+    transform: translateY(1vw);
+}
+.calculadora form {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2vw;
+    transform: translateY(1vw);
+}
+.datos-muro,
+.datos-viga,
+.datos-columna,
+.datos-contrapiso,
+.datos-pisos,
+.datos-techo,
+.datos-pintura,
+.resultados {
+    display: flex;
+    flex-direction: column;
+}
+.datos-muro h3,
+.datos-viga h3,
+.datos-columna h3,
+.datos-contrapiso h3,
+.datos-pisos h3,
+.datos-techo h3,
+.datos-pintura h3,
+.resultados h3 {
+    text-align: center;
+    margin-bottom: 1vw;
+}
+.calculadora label {
+    margin-top: 0.1vw;
+}
+.calculadora .inputs {
+    width: 100%;
+    height: 5vh;
+    margin-top: 0.3vw;
+    padding-left: 0.1vw;
+}
+
+
+/*BOTÓN CALCULAR*/
+.calculadora .btn {
+    align-self: center;
+    justify-self: center;
+    width: 10vw;
+    height: 5vh;
+    margin-top: -1vw;
+    background-color: #414345;
+    color: #fff;
+    border: none;
+    border-radius: 0.7vw;
+    transform: translateY(-5.5vw);
+}
+.calculadora .btn:hover {
+    cursor: pointer;
+    background-color: #EF476F;
+}
+
+
+/*VOLVER AL MENÚ*/
+.calculadora > a {
+    margin-top: 0vw;
+    color: #000;
+    text-decoration: none;
+    transform: translateY(-3vw);
+}
+.calculadora > a:hover {
+    color: #EF476F;
+}
+
+
+/*CAMPOS DE RESULTADOS*/
+.resultados .inputs {
+    width: 10vw;
+    height: 3vh;
+    align-self: center;
+}
+
+
+/*CAMPOS DE DATOS*/
+.datos-muro .inputs,
+.datos-viga .inputs,
+.datos-columna .inputs,
+.datos-contrapiso .inputs,
+.datos-pisos .inputs,
+.datos-techo .inputs,
+.datos-pintura .inputs {
+    width: 10vw;
+    height: 3vh;
+    align-self: center;
+}
+
+
+/*MURO DE LADRILLO*/
+.calculadora-muro {
+    width: 40vw;
+}
+
+
+/*VIGA DE HORMIGÓN*/
+.calculadora-viga {
+    width: 40vw;
+    transform: translateY(0vw);
+}
+.calculadora-viga .btn {
+    transform: translateY(-13vw);
+}
+
+
+/*COLUMNA DE HORMIGÓN*/
+.calculadora-columna {
+    width: 40vw;
+    transform: translateY(0vw);
+}
+.calculadora-columna .btn {
+    transform: translateY(-13vw);
+}
+
+
+/*CONTRAPISO*/
+.calculadora-contrapiso {
+    width: 40vw;
+}
+.calculadora-contrapiso .datos-contrapiso,
+.calculadora-contrapiso .resultados {
+    width: 100%;
+}
+.calculadora-contrapiso .datos-contrapiso .inputs {
+    width: 10vw;
+    height: 3vh;
+    align-self: center;
+}
+
+
+/*TECHO*/
+.calculadora-techo {
+    width: 40vw;
+    transform: translateY(0vw);
+}
+.calculadora-techo .btn {
+    transform: translateY(-13vw);
+}
+
+
+/*PISO*/
+.calculadora-pisos {
+    width: 40vw;
+}
+
+
+/*PINTURA*/
+.calculadora-pintura {
+    width: 40vw;
+    min-height: 60vh;
+}
+.calculadora-pintura h2 {
+    transform: translateY(-2vw);
+}
+.calculadora-pintura form {
+    transform: translateY(-2vw);
+}
+.calculadora-pintura .btn {
+    transform: translateY(1vw);
+}
+.calculadora-pintura > a {
+    transform: translateY(1vw);
+}
+
+
+/* PIE DE PÁGINA */
+footer {
+    width: 100%;
+    height: 4vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #414345;
+    color: #fff;
+}

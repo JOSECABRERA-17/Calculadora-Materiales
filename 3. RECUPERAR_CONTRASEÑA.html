@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RECUPERAR CONTRASEÑA-CALCULADORA</title>
+    <link rel="shortcut icon" href="img/LOGO.jpg">
+    <link rel="stylesheet" href="CSS/ESTILOS.CSS">
+</head>
+<body>
+    <header>
+        <img class="logo" src="img/LOGO.jpg" alt="Calculadora para construcción">
+        <h1>CALCULADORA</h1>
+    </header>
+    <main>
+        <section class="Recuperar-contraseña">
+            <h2>RECUPERA TU CONTRASEÑA</h2>
+            <form class="form-recuperar" id="form-recuperar" action="" method="post">
+                <label for="Nombre">NOMBRE DE USUARIO</label>
+                <input class="inputs" type="text" id="Nombre" placeholder="Nombre:" maxlength="50" required>
+                <label for="Correo">CORREO</label>
+                <input class="inputs" type="email" id="Correo" placeholder="Correo electrónico: "maxlength="50" required>
+                <label for="NuevaContraseña">NUEVA CONTRASEÑA</label>
+                <input class="inputs" type="password" id="NuevaContraseña" placeholder="Nueva contraseña:" maxlength="25" minlength="8" required>
+                <label for="ConfirmarContraseña">CONFIRMAR NUEVA CONTRASEÑA</label>
+                <input class="inputs" type="password" id="ConfirmarContraseña" placeholder="Confirmar nueva contraseña:" maxlength="25" minlength="8" required>
+                <input class="btn" type="submit" value="Confirmar">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <small>FET &copy; 2026</small>
+    </footer>
+    <script src="JavaScript/3. RECUPERAR_CONTRASEÑA.JS"></script>
+</body>
+</html>
