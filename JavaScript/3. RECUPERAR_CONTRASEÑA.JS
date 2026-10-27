@@ -1,6 +1,7 @@
+
 const formulario = document.getElementById("form-recuperar");
 
-formulario.addEventListener("submit", function(event) {
+formulario.addEventListener("submit", async function(event) {
 
     event.preventDefault();
 
@@ -9,16 +10,37 @@ formulario.addEventListener("submit", function(event) {
     const nuevaContraseña = document.getElementById("NuevaContraseña").value;
     const confirmarContraseña = document.getElementById("ConfirmarContraseña").value;
 
-    const nombreGuardado = localStorage.getItem("nombre");
-    const correoGuardado = localStorage.getItem("correo");
+    if (nuevaContraseña !== confirmarContraseña) {
+        alert("Las contraseñas nuevas no coinciden");
+        return;
+    }
 
-    if (nombre !== nombreGuardado | correo !== correoGuardado)
-        {alert("El nombre de usuario o correo no coinciden");}
-    else if (nuevaContraseña !== confirmarContraseña)
-        {alert("Las contraseñas nuevas no coinciden");}
-    else
-        {localStorage.setItem("contraseña", nuevaContraseña);
+    try {
+        const respuesta = await fetch("/api/recuperar-contrasena", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                nombre: nombre,
+                correo: correo,
+                nueva_contrasena: nuevaContraseña
+            })
+        });
+
+        const datos = await respuesta.json();
+
+        if (!respuesta.ok) {
+            alert(datos.error || "No se pudo actualizar la contraseña");
+            return;
+        }
+
         alert("Contraseña actualizada correctamente");
-        window.location.href = "1. INICIO_SESION.html";}
+        window.location.href = "1. INICIO_SESION.html";
+
+    } catch (error) {
+        console.error("Error:", error);
+        alert("No se pudo conectar con el servidor");
+    }
 
 });
